@@ -1,0 +1,6 @@
+{
+  "name": "PCalculator Pro",
+  "description": "Financial and standard calculator app for loans, EMI, FDR, DPS, DBR, age, and foreign exchange.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
