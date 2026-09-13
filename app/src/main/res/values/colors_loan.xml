@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- res/values/colors_loan.xml  — Light Theme -->
+<resources>
+
+    <!-- Input field stroke -->
+    <color name="input_stroke_color">#1565C0</color>
+    <color name="input_stroke_readonly">#BDBDBD</color>
+
+    <!-- Icon tints -->
+    <color name="icon_tint_color">#1565C0</color>
+    <color name="icon_readonly_tint">#9E9E9E</color>
+
+    <!-- Result text colors -->
+    <color name="emi_text_color">#0D47A1</color>
+    <color name="deduction_text_color">#1B5E20</color>
+
+</resources>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#2C5F95"> <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="#1A4575">
+
+        <TextView
+            android:id="@+id/tvHeaderInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Loan: ৳0.00 @ 0% for 0 Months"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tvHeaderEmi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="EMI: ৳0.00"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="4dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:background="#1A4575"
+        android:weightSum="4">
+
+        <TextView android:text="S.No" style="@style/TableHeaderText" android:gravity="start"/>
+        <TextView android:text="Interest" style="@style/TableHeaderText" android:gravity="end"/>
+        <TextView android:text="Principal" style="@style/TableHeaderText" android:gravity="end"/>
+        <TextView android:text="Balance" style="@style/TableHeaderText" android:gravity="end"/>
+    </LinearLayout>
+
+    <View android:layout_width="match_parent" android:layout_height="1dp" android:background="#5C8CB8"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TableLayout
+            android:id="@+id/tableLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="1,2,3"
+            android:padding="10dp">
+            </TableLayout>
+    </ScrollView>
+
+</LinearLayout>

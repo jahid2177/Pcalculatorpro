@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+     xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:app="http://schemas.android.com/apk/res-auto"
+     android:layout_height="match_parent"
+     android:layout_width="match_parent"
+     android:background="#F0FDF4">
+
+    <com.google.android.material.appbar.AppBarLayout
+         android:layout_height="220dp"
+         android:layout_width="match_parent"
+         android:background="@android:color/transparent">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+             android:layout_height="match_parent"
+             android:layout_width="match_parent"
+             app:contentScrim="#064E3B"
+             app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+            <View
+                 android:layout_height="match_parent"
+                 android:layout_width="match_parent"
+                 android:background="@drawable/premium_header_gradient" />
+
+            <LinearLayout
+                 android:layout_height="wrap_content"
+                 android:layout_width="match_parent"
+                 android:padding="30dp"
+                 android:orientation="vertical"
+                 android:layout_gravity="bottom">
+
+                <TextView
+                     android:layout_height="wrap_content"
+                     android:layout_width="wrap_content"
+                     android:textSize="30sp"
+                     android:fontFamily="sans-serif-black"
+                     android:textColor="#FFFFFF"
+                     android:text="Credit Card" />
+
+                <TextView
+                     android:layout_height="wrap_content"
+                     android:layout_width="wrap_content"
+                     android:textSize="14sp"
+                     android:textColor="#B3FFFFFF"
+                     android:letterSpacing="0.1"
+                     android:text="Charges &amp; Information" />
+
+            </LinearLayout>
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+         android:layout_height="match_parent"
+         android:layout_width="match_parent"
+         app:layout_behavior="@string/appbar_scrolling_view_behavior"
+         android:layout_marginTop="-30dp">
+
+        <LinearLayout
+             android:layout_height="wrap_content"
+             android:layout_width="match_parent"
+             android:background="@drawable/bg_main_content_round"
+             android:padding="6dp"
+             android:orientation="vertical">
+
+            <!-- পুরনো ১২টি অপশন -->
+            <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:orientation="horizontal">
+                <include layout="@layout/item_dashboard_premium" android:id="@+id/row_consumer"
+                     android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" />
+                <include layout="@layout/item_dashboard_premium" android:id="@+id/row_corporate"
+                     android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" />
+            </LinearLayout>
+
+            <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:orientation="horizontal">
+                <include layout="@layout/item_dashboard_premium" android:id="@+id/row_emi"
+                     android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" />
+                <include layout="@layout/item_dashboard_premium" android:id="@+id/row_discount"
+                     android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" />
+            </LinearLayout>
+
+            <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:orientation="horizontal">
+                <include layout="@layout/item_dashboard_premium" android:id="@+id/row_citizen"
+                     android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" />
+                <include layout="@layout/item_dashboard_premium" android:id="@+id/row_sanchay"
+                     android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" />
+            </LinearLayout>
+
+            <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:orientation="horizontal">
+                <include layout="@layout/item_dashboard_premium" android:id="@+id/row_revised"
+                     android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" />
+                <include layout="@layout/item_dashboard_premium" android:id="@+id/row_annexure"
+                     android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" />
+            </LinearLayout>
+
+            <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:orientation="horizontal">
+                <include layout="@layout/item_dashboard_premium" android:id="@+id/row_cib"
+                     android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" />
+                <include layout="@layout/item_dashboard_premium" android:id="@+id/row_support"
+                     android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" />
+            </LinearLayout>
+
+            <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:orientation="horizontal">
+                <include layout="@layout/item_dashboard_premium" android:id="@+id/row_allowance"
+                     android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" />
+                <include layout="@layout/item_dashboard_premium" android:id="@+id/row_supplementary"
+                     android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" />
+            </LinearLayout>
+
+            <!-- নতুন ৭টি অপশন -->
+            <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:orientation="horizontal">
+                <include layout="@layout/item_dashboard_premium" android:id="@+id/row_credit_limit_revision"
+                     android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" />
+                <include layout="@layout/item_dashboard_premium" android:id="@+id/row_platinum_lounge"
+                     android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" />
+            </LinearLayout>
+
+            <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:orientation="horizontal">
+                <include layout="@layout/item_dashboard_premium" android:id="@+id/row_passport_endorsement"
+                     android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" />
+                <include layout="@layout/item_dashboard_premium" android:id="@+id/row_probation_employee"
+                     android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" />
+            </LinearLayout>
+
+            <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:orientation="horizontal">
+                <include layout="@layout/item_dashboard_premium" android:id="@+id/row_manager_limit"
+                     android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" />
+                <include layout="@layout/item_dashboard_premium" android:id="@+id/row_card_ppg"
+                     android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" />
+            </LinearLayout>
+
+            <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:orientation="horizontal">
+                <include layout="@layout/item_dashboard_premium" android:id="@+id/row_application_form"
+                     android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" />
+                <include layout="@layout/item_dashboard_premium" android:id="@+id/row_ecommerce_facility"
+                     android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" />
+            </LinearLayout>
+
+            <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:orientation="horizontal">
+                <include layout="@layout/item_dashboard_premium" android:id="@+id/row_Internet_Banking"
+                     android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" />
+                <include layout="@layout/item_dashboard_premium" android:id="@+id/row_Application_Form_For_Instant_card"
+                     android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" />
+            </LinearLayout>
+
+            <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:orientation="horizontal">
+                <include layout="@layout/item_dashboard_premium" android:id="@+id/row_Capture_Card_Return_form"
+                     android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" />
+                <include layout="@layout/item_dashboard_premium" android:id="@+id/row_Card_Service_form"
+                     android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" />
+            </LinearLayout>
+
+            <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:orientation="horizontal">
+                <include layout="@layout/item_dashboard_premium" android:id="@+id/row_Card_Surrender_form"
+                     android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" />
+                <include layout="@layout/item_dashboard_premium" android:id="@+id/row_Dispute_Application_Form"
+                     android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" />
+            </LinearLayout>
+
+            <!-- NEW OPTIONS -->
+            <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:orientation="horizontal">
+                <include layout="@layout/item_dashboard_premium" android:id="@+id/row_smart_emi"
+                     android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" />
+                <include layout="@layout/item_dashboard_premium" android:id="@+id/row_lounge_facility"
+                     android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" />
+            </LinearLayout>
+
+            <!-- নতুন ৭টি অপশন (৭টি নতুন PDF) -->
+            <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:orientation="horizontal">
+                <include layout="@layout/item_dashboard_premium" android:id="@+id/row_user_guidelines"
+                     android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" />
+                <include layout="@layout/item_dashboard_premium" android:id="@+id/row_kpi_2026"
+                     android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" />
+            </LinearLayout>
+
+            <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:orientation="horizontal">
+                <include layout="@layout/item_dashboard_premium" android:id="@+id/row_smart_emi_pi_banking"
+                     android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" />
+                <include layout="@layout/item_dashboard_premium" android:id="@+id/row_ppg_v120"
+                     android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" />
+            </LinearLayout>
+
+            <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:orientation="horizontal">
+                <include layout="@layout/item_dashboard_premium" android:id="@+id/row_pi_cc_application_circular"
+                     android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" />
+                <include layout="@layout/item_dashboard_premium" android:id="@+id/row_revision_manager_limit"
+                     android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" />
+            </LinearLayout>
+
+            <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:orientation="horizontal">
+                <include layout="@layout/item_dashboard_premium" android:id="@+id/row_smart_emi_circular"
+                     android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" />
+                <include layout="@layout/item_dashboard_premium" android:id="@+id/row_staff_credit_limit_revision"
+                     android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

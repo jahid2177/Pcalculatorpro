@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+     xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:app="http://schemas.android.com/apk/res-auto"
+     android:layout_height="match_parent"
+     android:layout_width="match_parent"
+     android:background="#F0FDF4"
+     android:gravity="center"
+     android:padding="24dp"
+     android:orientation="vertical">
+
+    <ImageView
+         android:layout_height="100dp"
+         android:layout_width="100dp"
+         android:layout_marginBottom="16dp"
+         android:src="@drawable/app_logo"
+         android:contentDescription="App Logo" />
+
+    <TextView
+         android:layout_height="wrap_content"
+         android:layout_width="wrap_content"
+         android:textSize="24sp"
+         android:textColor="#064E3B"
+         android:text="Contact &amp; Support"
+         android:textStyle="bold" />
+
+    <TextView
+         android:layout_height="wrap_content"
+         android:layout_width="wrap_content"
+         android:gravity="center"
+         android:textSize="16sp"
+         android:textColor="#374151"
+         android:layout_marginTop="20dp"
+         android:text="Any query &amp; add anything important please contact me" />
+
+    <com.google.android.material.button.MaterialButton
+         android:layout_height="wrap_content"
+         android:layout_width="wrap_content"
+         app:cornerRadius="20dp"
+         android:backgroundTint="#25D366"
+         android:textColor="#FFFFFF"
+         android:layout_marginTop="16dp"
+         android:id="@+id/btnWhatsapp"
+         android:text="Chat on WhatsApp" />
+
+    <View
+         android:layout_height="1dp"
+         android:layout_width="120dp"
+         android:layout_marginVertical="40dp"
+         android:background="#D1D5DB" />
+
+    <TextView
+         android:layout_height="wrap_content"
+         android:layout_width="wrap_content"
+         android:textSize="14sp"
+         android:textColor="#6B7280"
+         android:text="This app created by" />
+
+    <TextView
+         android:layout_height="wrap_content"
+         android:layout_width="wrap_content"
+         android:textSize="20sp"
+         android:textColor="#064E3B"
+         android:layout_marginTop="8dp"
+         android:text="MD Jahidul Islam"
+         android:textStyle="bold" />
+
+    <TextView
+         android:layout_height="wrap_content"
+         android:layout_width="wrap_content"
+         android:textSize="17sp"
+         android:textColor="#374151"
+         android:text="Pubali Bank PLC"
+         android:textStyle="bold" />
+
+    <TextView
+         android:layout_height="wrap_content"
+         android:layout_width="wrap_content"
+         android:textSize="15sp"
+         android:textColor="#374151"
+         android:text="Card Business Division" />
+
+    <TextView
+         android:layout_height="wrap_content"
+         android:layout_width="wrap_content"
+         android:textSize="17sp"
+         android:textColor="#374151"
+         android:text="&amp;"
+         android:textStyle="bold" />
+
+    <TextView
+         android:layout_height="wrap_content"
+         android:layout_width="wrap_content"
+         android:textSize="15sp"
+         android:textColor="#374151"
+         android:text="Deputy Junior Officer," />
+android:textStyle="bold" />
+
+    <TextView
+         android:layout_height="wrap_content"
+         android:layout_width="wrap_content"
+         android:textSize="15sp"
+         android:textColor="#374151"
+         android:text="Mirerdanga Branch," />
+android:textStyle="bold" />
+
+    <TextView
+         android:layout_height="wrap_content"
+         android:layout_width="wrap_content"
+         android:textSize="15sp"
+         android:textColor="#374151"
+         android:text="Khulna." />
+android:textStyle="bold" />
+
+</LinearLayout>

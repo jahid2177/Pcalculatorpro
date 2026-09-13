@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- res/values-night/colors_loan.xml  — Dark Theme -->
+<resources>
+
+    <!-- Input field stroke — softer blue in dark mode -->
+    <color name="input_stroke_color">#5C93E5</color>
+    <color name="input_stroke_readonly">#4A4A4A</color>
+
+    <!-- Icon tints -->
+    <color name="icon_tint_color">#5C93E5</color>
+    <color name="icon_readonly_tint">#616161</color>
+
+    <!-- Result text colors — brighter for dark backgrounds -->
+    <color name="emi_text_color">#90CAF9</color>
+    <color name="deduction_text_color">#A5D6A7</color>
+
+</resources>

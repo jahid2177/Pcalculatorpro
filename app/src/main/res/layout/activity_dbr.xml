@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+     xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:app="http://schemas.android.com/apk/res-auto"
+     android:layout_height="match_parent"
+     android:layout_width="match_parent"
+     android:background="#F5F6FA"
+     android:fillViewport="true">
+
+    <LinearLayout
+         android:layout_height="wrap_content"
+         android:layout_width="match_parent"
+         android:padding="20dp"
+         android:orientation="vertical">
+
+        <TextView
+             android:layout_height="wrap_content"
+             android:layout_width="wrap_content"
+             android:layout_marginBottom="24dp"
+             android:textSize="28sp"
+             android:textColor="#0D1B2A"
+             android:text="DBR Calculator"
+             android:textStyle="bold" />
+
+        <com.google.android.material.textfield.TextInputLayout
+             android:layout_height="wrap_content"
+             android:layout_width="match_parent"
+             android:layout_marginBottom="16dp"
+             android:hint="Gross Monthly Income"
+             app:boxStrokeColor="#0D1B2A"
+             android:textColorHint="#808080"
+             app:hintTextColor="#808080"
+             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                 android:layout_height="wrap_content"
+                 android:layout_width="match_parent"
+                 android:textColor="#000000"
+                 android:inputType="numberDecimal"
+                 android:id="@+id/etIncome" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+             android:layout_height="wrap_content"
+             android:layout_width="match_parent"
+             android:layout_marginBottom="16dp"
+             android:hint="Existing Monthly EMI"
+             app:boxStrokeColor="#0D1B2A"
+             android:textColorHint="#808080"
+             app:hintTextColor="#808080"
+             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                 android:layout_height="wrap_content"
+                 android:layout_width="match_parent"
+                 android:textColor="#000000"
+                 android:inputType="numberDecimal"
+                 android:id="@+id/etExistingEmi"
+                 android:text="0" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+             android:layout_height="wrap_content"
+             android:layout_width="match_parent"
+             android:layout_marginBottom="16dp"
+             android:hint="Existing Credit Card Limit"
+             app:boxStrokeColor="#0D1B2A"
+             android:textColorHint="#808080"
+             app:hintTextColor="#808080"
+             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                 android:layout_height="wrap_content"
+                 android:layout_width="match_parent"
+                 android:textColor="#000000"
+                 android:inputType="numberDecimal"
+                 android:id="@+id/etExistingCardLimit"
+                 android:text="0" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+             android:layout_height="wrap_content"
+             android:layout_width="match_parent"
+             android:layout_marginBottom="16dp"
+             android:hint="Proposed New EMI"
+             app:boxStrokeColor="#0D1B2A"
+             android:textColorHint="#808080"
+             app:hintTextColor="#808080"
+             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                 android:layout_height="wrap_content"
+                 android:layout_width="match_parent"
+                 android:textColor="#000000"
+                 android:inputType="numberDecimal"
+                 android:id="@+id/etProposedEmi"
+                 android:text="0" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+             android:layout_height="wrap_content"
+             android:layout_width="match_parent"
+             android:layout_marginBottom="24dp"
+             android:hint="Proposed Credit Card Limit"
+             app:boxStrokeColor="#0D1B2A"
+             android:textColorHint="#808080"
+             app:hintTextColor="#808080"
+             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                 android:layout_height="wrap_content"
+                 android:layout_width="match_parent"
+                 android:textColor="#000000"
+                 android:inputType="numberDecimal"
+                 android:id="@+id/etProposedCardLimit"
+                 android:text="0" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+             android:layout_height="60dp"
+             android:layout_width="match_parent"
+             android:layout_marginBottom="24dp"
+             app:cornerRadius="12dp"
+             android:backgroundTint="#0D1B2A"
+             android:textColor="#FFFFFF"
+             android:id="@+id/btnCalculateDbr"
+             android:text="Check Eligibility" />
+
+        <androidx.cardview.widget.CardView
+             android:layout_height="wrap_content"
+             android:layout_width="match_parent"
+             android:visibility="gone"
+             app:cardElevation="4dp"
+             app:cardCornerRadius="16dp"
+             android:id="@+id/cardResult">
+
+            <LinearLayout
+                 android:layout_height="wrap_content"
+                 android:layout_width="match_parent"
+                 android:background="@drawable/bg_glow_card"
+                 android:gravity="center"
+                 android:padding="20dp"
+                 android:orientation="vertical">
+
+                <TextView
+                     android:layout_height="wrap_content"
+                     android:layout_width="wrap_content"
+                     android:textColor="#555"
+                     android:text="Your DBR Score" />
+
+                <TextView
+                     android:layout_height="wrap_content"
+                     android:layout_width="wrap_content"
+                     android:textSize="40sp"
+                     android:textColor="#0D1B2A"
+                     android:id="@+id/tvDbrPercentage"
+                     android:text="0%"
+                     android:textStyle="bold" />
+
+                <TextView
+                     android:layout_height="wrap_content"
+                     android:layout_width="wrap_content"
+                     android:background="#E0E0E0"
+                     android:padding="8dp"
+                     android:textColor="#000000"
+                     android:id="@+id/tvStatus"
+                     android:text="Status"
+                     android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+</ScrollView>
